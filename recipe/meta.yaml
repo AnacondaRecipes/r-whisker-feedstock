@@ -10,8 +10,8 @@ package:
 source:
   fn: whisker_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/whisker_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/whisker/whisker_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/whisker_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/whisker/whisker_{{ version }}.tar.gz
   sha256: 484836510fcf123a66ddd13cdc8f32eb98e814cad82ed30c0294f55742b08c7c
 
 
