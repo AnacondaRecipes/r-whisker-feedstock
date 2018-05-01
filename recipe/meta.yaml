@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/whisker/whisker_{{ version }}.tar.gz
   sha256: 484836510fcf123a66ddd13cdc8f32eb98e814cad82ed30c0294f55742b08c7c
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
