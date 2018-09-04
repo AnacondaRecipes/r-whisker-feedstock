@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: whisker_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/whisker_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/whisker/whisker_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: markdown
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
